@@ -1,7 +1,7 @@
 # Simple-Banking-System
 
 # Project Description
-the simple banking system is an easy to use system with the following operations:
+the simple banking system is an easy to use system to help you track money with the following operations:
 1. checking balance
 2. withdrawing 
 3. dipositing 
@@ -9,7 +9,7 @@ the simple banking system is an easy to use system with the following operations
 # Project Feature
 User Interface
 -
-Displays a welcoming message and operations available
+Welcomes the user to the bank and provides the operations available 
 
 ![alt text](<Screenshot 2025-02-11 185002.png>)
 
@@ -44,7 +44,7 @@ Allows the user to exit the system
 # Implementations 
 state diagram 
 -
-![alt text](<Screenshot 2025-02-12 160619.png>)
+![alt text](<Screenshot 2025-03-27 183327.png>)
 
 Error Handling Type I: Unavailable Operation
 -
@@ -63,7 +63,7 @@ while (getchar() != '\n'); This function was used to to clear the buffer. This i
 
 Buffer Explained
 -
-If you do not know what the buffer is or how it works I  will give a simple explanation here. The buffer is what stores the data inputted into the terminal from using scanf(or any code that request input from the user). However, if the user inputs more variables into the terminal then the code asks for, the buff will keep the data and input it into the next line of code that requests an input.
+If you do not know what the buffer is or how it works I  will give a simple explanation here. The buffer is what stores the data inputted into the from using scanf(or any code that request input from the user). However, if the user inputs more variables into the terminal then the code asks for, the buff will keep the data and input it into the next line of code that requests an input. However the the problem that arised for my code is caused from the user pressing enter which in c programming is counted as '\n' a charater of its own
 
 While Function
 -
@@ -100,12 +100,10 @@ Future Improvements
 - Taking out loans
   
 # References 
-Buffer explained: [Problems with scanf](https://www.youtube.com/watch?v=Kl23Gjp_bmI)
+Buffer explanation: [Problems with scanf](https://www.youtube.com/watch?v=Kl23Gjp_bmI)
 
+While Condition: @alextianyf 
 
+Code architecture: @alextianyf
 
-
-
-
-
-
+Error handling: help from @alextainyf
