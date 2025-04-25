@@ -10,37 +10,102 @@ the simple banking system is an easy to use system to help you track money with 
 User Interface
 -
 Welcomes the user to the bank and provides the operations available 
-
-![alt text](<Screenshot 2025-02-11 185002.png>)
-
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):
+```
 Operation One
 -
 Allows the user to check their balance before and after transactions
-
-![alt text](<Screenshot 2025-02-11 185939.png>)
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):1
+Your current balance is:0
+```
 
 Operation Two
 -
 Allows user to deposite money into the bank
-
-![alt text](<Screenshot 2025-02-11 190821.png>)
-
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):2
+Enter Deposit amount:
+50
+Depost successful!
+Your new balance is:50
+```
 Operation Three 
 -
 Allows the user to withdrawal money from the bank
 
-![alt text](<Screenshot 2025-02-11 191338.png>)
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):3
+enter withdrawal amount:
+20
+Withdrawal successful!
+Your new balance is:30
+```
 
 However if the user trys to withdrawal more money then the current amount in their balance the system will inform you
-
-![alt text](<Screenshot 2025-02-11 191426.png>)
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):3
+enter withdrawal amount:
+100
+Insufficent balance. Withdrawal failed.
+```
 
 Operation Four 
 -
 Allows the user to exit the system
-
-![alt text](<Screenshot 2025-02-11 191808.png>)
-
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):4
+Thank you for using the Simple Bank System. Goodbye!
+```
 # Implementations 
 state diagram 
 -
@@ -49,13 +114,34 @@ state diagram
 Error Handling Type I: Unavailable Operation
 -
 When entering operations if chosen operation is not available user will be told to pick one of the four operations
-![alt text](<Screenshot 2025-02-11 192555.png>) 
-
+ 
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):5
+You have entered an integer greater then 4 or less then 1 please enter a variable between one and four```
 Error Handling Type II: Non-integer input 
 -
 If any non-integer is imputed into the system it will ask the user to input an integer
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):a
+you have entered a non-integer character please enter an integer bewteen 1 and 4
+```
 
-![alt text](<Screenshot 2025-02-11 193017.png>)
   
 Buffer Handling
 -
@@ -68,25 +154,148 @@ If you do not know what the buffer is or how it works I  will give a simple expl
 While Function
 -
 The while function was made using a variable called “run” that was set as true allowing the function to run on forever until operation 4 is picked setting “run” to false
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):1
+Your current balance is:0
 
-![alt text](<Screenshot 2025-02-11 201506.png>)
-
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):4
+Thank you for using the Simple Bank System. Goodbye!
+```
 
 While Function Explained
 -
-How the while function works is that it will have a condition that needs to be made along with code that will be attached to it, meaning as long as the while condition is true the code attached to the while function will run until the condition is no longer true
+How the while function operates is that it will have a condition that needs to be made along with code that will be attached to it, which makes it so as long as the while condition is true the code attached to the while function will run until the condition is no longer true.
 
 # Run Demo 
 Project Features Run Demo
 -
-![alt text](<Screenshot 2025-03-26 150826.png>)
-,
-![alt text](<Screenshot 2025-03-26 150849.png>)
+### Checking balance
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):1
+```
+### Depositing money
+```
+Your current balance is:0
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):2
+Enter Deposit amount:
+30
+Depost successful!
+Your new balance is:30
+```
+### Withdrawing money
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):3
+enter withdrawal amount:
+20
+Withdrawal successful!
+Your new balance is:10
+```
+
+### Exiting the system
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):4
+Thank you for using the Simple Bank System. Goodbye!
+```
 
 Implementations Run Demo
 -
-![alt text](<Screenshot 2025-03-26 151312.png>)
-![alt text](<Screenshot 2025-03-26 151538.png>)
+### User enters unavalable options
+```
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):a
+you have entered a non-integer character please enter an integer bewteen 1 and 4
+
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):5
+You have entered an integer greater then 4 or less then 1 please enter a variable between one and four
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):2
+Enter Deposit amount:
+a
+you have entered a non-integer character please enter an integer bewteen 1 and 4
+
+------------------------------------
+      Welcome to the simple bank
+------------------------------------
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdrawal
+4. Exit
+Enter your choice(1-4):3
+enter withdrawal amount:
+a
+you have entered a non-integer character please enter an integer bewteen 1 and 4
+```
 
 # Challenges and Future Improvements
 Challenges
