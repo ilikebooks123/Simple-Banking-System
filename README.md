@@ -9,7 +9,7 @@ the simple banking system is an easy to use system to help you track money with 
 # Project Feature
 User Interface
 -
-Welcomes the user to the bank and provides the operations available 
+Welcomes the user to the bank and provides the operations available.
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -23,7 +23,7 @@ Enter your choice(1-4):
 ```
 Operation One
 -
-Allows the user to check their balance before and after transactions
+Allows the user to check their balance before and after transactions.
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -39,7 +39,7 @@ Your current balance is:0
 
 Operation Two
 -
-Allows user to deposite money into the bank
+Allows user to deposite money into the bank.
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -57,7 +57,7 @@ Your new balance is:50
 ```
 Operation Three 
 -
-Allows the user to withdrawal money from the bank
+Allows the user to withdrawal money from the bank.
 
 ```
 ------------------------------------
@@ -74,8 +74,7 @@ enter withdrawal amount:
 Withdrawal successful!
 Your new balance is:30
 ```
-
-However if the user trys to withdrawal more money then the current amount in their balance the system will inform you
+However if the user trys to withdrawal more money than available in their balance, the system will inform you.
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -113,7 +112,7 @@ state diagram
 
 Error Handling Type I: Unavailable Operation
 -
-When entering operations if chosen operation is not available user will be told to pick one of the four operations
+When entering operations if chosen operation is not available user will be told to pick one of the four operations.
  
 ```
 ------------------------------------
@@ -130,6 +129,8 @@ Error Handling Type II: Non-integer input
 -
 If any non-integer is imputed into the system it will ask the user to input an integer
 ```
+
+```
 ------------------------------------
       Welcome to the simple bank
 ------------------------------------
@@ -142,7 +143,6 @@ Enter your choice(1-4):a
 you have entered a non-integer character please enter an integer bewteen 1 and 4
 ```
 
-  
 Buffer Handling
 -
 while (getchar() != '\n'); This function was used to to clear the buffer. This is a loop that takes characters from the buffer and discards them until its a new line.
@@ -154,6 +154,7 @@ If you do not know what the buffer is or how it works I  will give a simple expl
 While Function
 -
 The while function was made using a variable called “run” that was set as true allowing the function to run on forever until operation 4 is picked setting “run” to false
+
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -186,6 +187,7 @@ How the while function operates is that it will have a condition that needs to b
 Project Features Run Demo
 -
 ### Checking balance
+
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -197,7 +199,9 @@ Please select an operation:
 4. Exit
 Enter your choice(1-4):1
 ```
+
 ### Depositing money
+
 ```
 Your current balance is:0
 ------------------------------------
@@ -214,7 +218,9 @@ Enter Deposit amount:
 Depost successful!
 Your new balance is:30
 ```
+
 ### Withdrawing money
+
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -232,6 +238,7 @@ Your new balance is:10
 ```
 
 ### Exiting the system
+
 ```
 ------------------------------------
       Welcome to the simple bank
@@ -248,6 +255,7 @@ Thank you for using the Simple Bank System. Goodbye!
 Implementations Run Demo
 -
 ### User enters unavalable options
+
 ```
 ------------------------------------
       Welcome to the simple bank
